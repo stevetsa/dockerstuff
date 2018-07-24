@@ -23,4 +23,10 @@ magicblast -num_threads 16 -infmt fastq -query ../ERR1600439_1.fastq  -query_mat
 
 magicblast -num_threads 16 -infmt fasta -query test.blast.in -out test.blast.out.tab -db MetagenomicAntibioticResistance/cardgene/cardgenedb -outfmt tabular 
 
+/home/mylagimail2004/test/MetagenomicAntibioticResistance/cardgene# grep ">" nucleotide_fasta_protein_homolog_model.fasta > nucleotide_fasta_protein_homolog_model.fasta.header ##2239 lines
+
+### Dokcer remove exited containers
+docker rm $(docker ps -a -f status=exited -q)
+### Docker remove images with no tag
+docker rmi $(docker images -a -q)
 ```
