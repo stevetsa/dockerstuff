@@ -29,4 +29,24 @@ magicblast -num_threads 16 -infmt fasta -query test.blast.in -out test.blast.out
 docker rm $(docker ps -a -f status=exited -q)
 ### Docker remove images with no tag
 docker rmi $(docker images -a -q)
+
+/home/mylagimail2004/test/MetagenomicAntibioticResistance/cardgene# makeblastdb -in nucleotide_fasta_protein_homolog_model.fasta -parse_seqids -dbtype nucl -out cardgene2db
+
+
+### Jupyter
+ ssh -L 8888:0.0.0.0:8888 mylagimail2004@35.237.136.251
+  159  sudo apt-get install python3-pip
+  162  python3 -m pip install --upgrade pip
+  163  sudo python3 -m pip install --upgrade pip
+  164  sudo python3 -m pip install jupyter
+  
+  168  jupyter notebook --generate-config
+  170  more /home/mylagimail2004/.jupyter/jupyter_notebook_config.py
+  171  pico /home/mylagimail2004/.jupyter/jupyter_notebook_config.py
+  172  jupyter-notebook --no-browser --port=8888
+  
+  pip3 install not working
+  conda install -c bioconda snakemake 
+
+  
 ```
