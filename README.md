@@ -48,5 +48,8 @@ docker rmi $(docker images -a -q)
   pip3 install not working
   conda install -c bioconda snakemake 
 
-  
+mkdir -p work
+chmod 777 work
+  docker run -it --rm -v `pwd`:`pwd` -w `pwd` -p 8888:8888 temp
+ 
 ```
