@@ -55,4 +55,7 @@ chmod 777 work
 
 mylagimail2004@superbugs:~/docker/work$ sh MetagenomicAntibioticResistance/nastybugs.sh id.txt ./hgDir ./cardgene ./cardsnp 16 ./outDir
 mylagimail2004@superbugs:~/docker/work$ docker run -it --rm -v `pwd`:`pwd` -w `pwd` stevetsa/nastybugs2 /bin/bash
+
+bash MetagenomicAntibioticResistance/nastybugs.sh id.txt  ./hgDir ./cardgene ./cardsnp 16 ./outDir > log &
+
 ```
