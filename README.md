@@ -53,3 +53,5 @@ chmod 777 work
   docker run -it --rm -v `pwd`:`pwd` -w `pwd` -p 8888:8888 temp
  
 ```
+mylagimail2004@superbugs:~/docker/work$ sh MetagenomicAntibioticResistance/nastybugs.sh id.txt ./hgDir ./cardgene ./cardsnp 16 ./outDir
+
