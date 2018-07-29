@@ -58,4 +58,13 @@ mylagimail2004@superbugs:~/docker/work$ docker run -it --rm -v `pwd`:`pwd` -w `p
 
 bash MetagenomicAntibioticResistance/nastybugs.sh id.txt  ./hgDir ./cardgene ./cardsnp 16 ./outDir > log &
 
+
+
+docker run -it --rm -v `pwd`:`pwd` -w `pwd` stevetsa/temp3 /bin/bash
+bash nastybugs3.sh id.txt ./hgDir2 ./cardgene2 ./cardsnp2 16 ./outDir2 ./inDir &
+
 ```
+
+
+
+
