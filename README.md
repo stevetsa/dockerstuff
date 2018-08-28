@@ -65,6 +65,8 @@ bash nastybugs3.sh id.txt ./hgDir2 ./cardgene2 ./cardsnp2 16 ./outDir2 ./inDir &
 
 ```
 
+docker run --name kallisto_container -it -d stevetsa/kallisto /bin/bash
+docker exec -it kallisto_container kallisto index -i cDNAindex 2018-ACMBCB-workshop/transcripts.fasta.gz
 
 
 
